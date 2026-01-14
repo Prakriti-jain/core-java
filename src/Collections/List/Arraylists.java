@@ -2,7 +2,11 @@ package Collections.List;
 import java.util.Collections;
 
 /*
-ArrayLis is a resizable array implementation of the List interface using class java.util.ArrayList. They dynamically grow and shriink dynamically.
+Java has a set of standard collection classes that implement Collection interfaces, some of these
+classes provide full implementation while some are abstract classes. The standard collection classes
+are - AbstractCollection, AbstractList, AbstractSequentialList, LinkedList, ArrayList etc.
+
+ArrayList is a resizable array implementation of the List interface using class java.util.ArrayList. They dynamically grow and shriink dynamically.
 They have fast random using index(zero based)
 
 Methods in ArrayList
