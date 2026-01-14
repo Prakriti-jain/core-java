@@ -1,15 +1,19 @@
 package FileManagement;
 /*
-Files in java is used to represent the name and path of a file or directory. Methods like creating, deleting, and extracting information are provided
-For this the package java.io.package.
+Files in java is used to represent the name and path of a file or directory. Methods like creating,
+deleting, and extracting information are provided. For this the package java.io.package.
 
-I/O Streams - these are fundamentals for handling input and output operations. They provide uniform ways to read, write files
-These are categorized into two types depending on the type of data they handle -
+I/O Streams - these are fundamentals for handling input and output operations. They provide
+uniform ways to read, write files. These are categorized into two types depending on the
+type of data they handle -
 
-- Byte Streams - this is used to handle raw binary data like images, audio files, videos. 8-bit bytes of data are used. It has two main abstract classes -
-InputStream (for reading data) and OutputStream (for writing data)
+- Byte Streams - this is used to handle raw binary data like images, audio files, videos.
+8-bit bytes of data are used. It has two main abstract classes - InputStream (for reading data)
+and OutputStream (for writing data)
 
-- Character Streams - these are used to handle text data. they work with 16-bit Unicode characters. It has two main abstract classes - Reader (Base class for all character based input stream) and Writer (base class for all character based output streams)
+- Character Streams - these are used to handle text data. they work with 16-bit Unicode
+characters. It has two main abstract classes - Reader (Base class for all character based
+input stream) and Writer (base class for all character based output streams)
  */
 
 import java.io.File;
