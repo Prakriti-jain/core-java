@@ -13,12 +13,16 @@ CompletableFuture is nonblocking with callbacks
 public class CompFuture {
     static void main() {
         CompletableFuture<String> cf = new CompletableFuture<>();
-        CompletableFuture.supplyAsync(() -> {
+        CompletableFuture.runAsync(() -> {
             String str1 = "Prakriti";
             String str2 = "Jain";
             String str3 = Arrays.toString(str1.split("k"));
-            return str3 + str2;
+            cf.complete(str3 + str2);
+//            return str3 + str2;
         });
+
+        //requires complete statement if task is defined separately otherwise return for
+        // supplyAsync which is defined inside the constructor of CompletableFuture
 
         String result = cf.join();
         System.out.println("Result is " + result);
